@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+}
+.slanted {
+    height: 500px;
+    background-color: #0891B2;
+    transform: skewY(-13deg);
+    position: relative;
+    top: -200px;
+    box-shadow: 1px 1px 8px 1px;
+}
+.about-section {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    display: flex;
+    isolation: isolate;
+}
+.about-left-pane {
+    max-width: 500px;
+    isolation: isolate;
+}
+.profile-image {
+    max-width: 500px;
+    box-shadow: 1px 1px 8px -2px;
+    border-radius: 8px;
+}
+.about-right-pane {
+    flex: 0.8
+}
+.about-text {
+    margin-top: 8%;
+    background-color: #FFF;
+    padding: 30px 10px 30px 10px;
+    box-shadow: 1px 1px 8px -3px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
