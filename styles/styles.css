@@ -49,8 +49,8 @@ body {
     border-top-right-radius: 8px;
     border-bottom-right-radius: 8px;
 }
-.icons-div {
-    width: 30%;
+.icons-div ul {
+    list-style: none;
     float: right;
     display: flex;
     justify-content: flex-end;
@@ -58,11 +58,16 @@ body {
     gap: 10px;
 }
 
+.icons-div ul li a {
+    display: block;
+    width: 24px;
+}
+
 .middle {
     margin-bottom: 5%;
 }
 div[class*=icon-] {
-    width: 25px;
+    width: 24px;
 }
 
 .middle .container {
@@ -104,7 +109,8 @@ div[class*=icon-] {
 }
 
 .card .icons-div {
-    margin: 0;
+    display: flex;
+    gap: 10px;
 }
 
 .h2-title {
@@ -140,12 +146,24 @@ div[class*=icon-] {
     gap: 20px;
 }
 
+.footer address a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: #FFF;
+}
+
+.icon-md {
+    width: 24px;
+}
+
 .footer .footer-icons img {
     width: 35px;
 }
 
 .footer .footer-img {
-    max-width: 1024px;
+    max-width: 1024px !important;
     left: unset;
     max-width: unset;
     width: unset;

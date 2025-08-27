@@ -7,254 +7,279 @@
     <link rel="stylesheet" href="./styles/styles.css">
 </head>
 <body>
-    <div class="main-container">
-        <!-- Top section -->
-        <div class="top">
-            <div class="slanted"></div>
-            <div class="about-section">
-                <div class="about-container">
-                    <img class="profile-image"
-                        alt="Profile image of Ashley Williams holding a laptop while talking on the phone." 
-                        src="./images/profile-woman-large-1920.jpg"
-                        srcset="./images/profile-woman-large-1920.jpg 1920w, ./images/profile-woman-medium-768.jpg 768w, ./images/profile-woman-small-425.jpg 425w"
-                        sizes="(min-width: 1920px) 1920px, (min-width: 768px) 768px, (min-width: 425px) 425px">
-                    <div class="about-text">
-                        <h2>About me</h2>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                            Praesent euismod vel nibh vitae rutrum. 
-                            Integer at lorem id quam ornare commodo sit amet ut risus. 
-                            Nulla dolor ex, eleifend id felis in, tempor condimentum nisl. 
-                            Sed varius maximus ligula at tristique. 
-                            Nam eros quam, tincidunt bibendum arcu a, faucibus placerat felis. 
-                            Quisque sit amet nibh lacus. Sed malesuada ante in pretium tristique. 
-                            Sed porttitor vitae erat a ultricies. Vestibulum ac placerat metus. 
-                            Morbi ut scelerisque orci, in viverra tortor.
-                        </p>
-                        <div class="icons-div">
-                            <div class="icon-github">
-                                <a class="github-link" href="#">
+    <!-- <main class="main-container"> -->
+    <!-- Top section -->
+    <header class="top">
+        <div class="slanted"></div>
+        <section class="about-section">
+            <div class="about-container">
+                <img class="profile-image"
+                    alt="Profile image of Ashley Williams holding a laptop while talking on the phone." 
+                    src="./images/profile-woman-large-1920.jpg"
+                    srcset="./images/profile-woman-large-1920.jpg 1920w, ./images/profile-woman-medium-768.jpg 768w, ./images/profile-woman-small-425.jpg 425w"
+                    sizes="(min-width: 1920px) 1920px, (min-width: 768px) 768px, (min-width: 425px) 425px">
+                <div class="about-text">
+                    <h1>About me</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Praesent euismod vel nibh vitae rutrum. 
+                        Integer at lorem id quam ornare commodo sit amet ut risus. 
+                        Nulla dolor ex, eleifend id felis in, tempor condimentum nisl. 
+                        Sed varius maximus ligula at tristique. 
+                        Nam eros quam, tincidunt bibendum arcu a, faucibus placerat felis. 
+                        Quisque sit amet nibh lacus. Sed malesuada ante in pretium tristique. 
+                        Sed porttitor vitae erat a ultricies. Vestibulum ac placerat metus. 
+                        Morbi ut scelerisque orci, in viverra tortor.
+                    </p>
+                    <nav class="icons-div" aria-label="Social media links">
+                        <ul>
+                            <li>
+                                <a class="github-link" href="#" aria-label="Github profile">
                                     <img src="./images/github.svg" alt="github link">
                                 </a>
-                            </div>
-                            <div class="icon-linkedin">
+                            </li>
+                            <li class="icon-linkedin">
                                 <a class="linkedin-link" href="#">
                                     <img src="./images/linkedin.svg" alt="linkedin link">
                                 </a>
-                            </div>
-                            <div class="icon-x">
+                            </li>
+                            <li class="icon-x">
                                 <a class="x-link" href="#">
                                     <img src="./images/x.svg" alt="x link">
                                 </a>
-                            </div>
-                        </div>
-                    </div>
+                            </li>
+                        </ul>
+                    </nav>
                 </div>
             </div>
-        </div>
+        </section>
+    </header>
 
-        <!-- Middle section -->
-        <div class="middle">
-            <div class="container">
-                <div class="title">
-                    <h2>My Work</h2>
-                </div>
-                <div class="project-grid">
-                    <div class="project-container">
-                        <!-- Project 1 -->
-                        <div class="card">
-                            <div class="img-div">
-                                <span class="h2-title">Screenshot of Project</span>
-                            </div>
-                            <div class="project-details">
-                                <div class="project-info">
-                                    <h3>Project Name</h3>
-                                    <div class="icons-div">
-                                        <div class="icon-github">
-                                            <a class="github-link" href="#">
-                                                <img src="./images/github.svg" alt="github link">
-                                            </a>
-                                        </div>
-                                        <div class="icon-open-new">
-                                            <a class="open-new-link" href="#">
-                                                <img src="./images/open-new.svg" alt="Open in new Tab">
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <p>A short description of the project. Just a couple of sentances will do.</p>
-                            </div>
+    <!-- Middle section -->
+    <main class="middle">
+        <section class="container">
+            <div class="title">
+                <h2>My Work</h2>
+            </div>
+            <div class="project-grid">
+                <div class="project-container">
+                    <!-- Project 1 -->
+                    <article class="card">
+                        <div class="img-div" aria-label="Screenshot of project 1">
+                            <span class="h2-title">Screenshot of Project</span>
                         </div>
+                        <div class="project-details">
+                            <div class="project-info">
+                                <h3>Project Name</h3>
+                                <nav class="icons-div">
+                                    <div class="icon-github">
+                                        <a class="github-link" href="#" aria-label="View source code on github">
+                                            <img src="./images/github.svg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="icon-open-new">
+                                        <a class="open-new-link" href="#" target="_blank" aria-label="Open project in new Tab" 
+                                            rel="noopener noreferrer">
+                                            <img src="./images/open-new.svg" alt="">
+                                        </a>
+                                    </div>
+                                </nav>
+                            </div>
+                            <p>A short description of the project. Just a couple of sentances will do.</p>
+                        </div>
+                    </article>
 
-                        <!-- Project 2 -->
-                            <div class="card">
-                            <div class="img-div">
-                                <span class="h2-title">Screenshot of Project</span>
-                            </div>
-                            <div class="project-details">
-                                <div class="project-info">
-                                    <h3>Project Name</h3>
-                                    <div class="icons-div">
-                                        <div class="icon-github">
-                                            <a class="github-link" href="#">
-                                                <img src="./images/github.svg" alt="github link">
-                                            </a>
-                                        </div>
-                                        <div class="icon-open-new">
-                                            <a class="open-new-link" href="#">
-                                                <img src="./images/open-new.svg" alt="Open in new Tab">
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <p>A short description of the project. Just a couple of sentances will do.</p>
-                            </div>
+                    <!-- Project 2 -->
+                    <article class="card">
+                        <div class="img-div" aria-label="Screenshot of project 1">
+                            <span class="h2-title">Screenshot of Project</span>
                         </div>
+                        <div class="project-details">
+                            <div class="project-info">
+                                <h3>Project Name</h3>
+                                <nav class="icons-div">
+                                    <div class="icon-github">
+                                        <a class="github-link" href="#" aria-label="View source code on github">
+                                            <img src="./images/github.svg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="icon-open-new">
+                                        <a class="open-new-link" href="#" target="_blank" aria-label="Open project in new Tab" 
+                                            rel="noopener noreferrer">
+                                            <img src="./images/open-new.svg" alt="">
+                                        </a>
+                                    </div>
+                                </nav>
+                            </div>
+                            <p>A short description of the project. Just a couple of sentances will do.</p>
+                        </div>
+                    </article>
 
-                        <!-- Project 3 -->
-                            <div class="card">
-                            <div class="img-div">
-                                <span class="h2-title">Screenshot of Project</span>
-                            </div>
-                            <div class="project-details">
-                                <div class="project-info">
-                                    <h3>Project Name</h3>
-                                    <div class="icons-div">
-                                        <div class="icon-github">
-                                            <a class="github-link" href="#">
-                                                <img src="./images/github.svg" alt="github link">
-                                            </a>
-                                        </div>
-                                        <div class="icon-open-new">
-                                            <a class="open-new-link" href="#">
-                                                <img src="./images/open-new.svg" alt="Open in new Tab">
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <p>A short description of the project. Just a couple of sentances will do.</p>
-                            </div>
+                    <!-- Project 3 -->
+                    <article class="card">
+                        <div class="img-div" aria-label="Screenshot of project 1">
+                            <span class="h2-title">Screenshot of Project</span>
                         </div>
+                        <div class="project-details">
+                            <div class="project-info">
+                                <h3>Project Name</h3>
+                                <nav class="icons-div">
+                                    <div class="icon-github">
+                                        <a class="github-link" href="#" aria-label="View source code on github">
+                                            <img src="./images/github.svg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="icon-open-new">
+                                        <a class="open-new-link" href="#" target="_blank" aria-label="Open project in new Tab" 
+                                            rel="noopener noreferrer">
+                                            <img src="./images/open-new.svg" alt="">
+                                        </a>
+                                    </div>
+                                </nav>
+                            </div>
+                            <p>A short description of the project. Just a couple of sentances will do.</p>
+                        </div>
+                    </article>
 
-                        <!-- Project 4 -->
-                            <div class="card">
-                            <div class="img-div">
-                                <span class="h2-title">Screenshot of Project</span>
-                            </div>
-                            <div class="project-details">
-                                <div class="project-info">
-                                    <h3>Project Name</h3>
-                                    <div class="icons-div">
-                                        <div class="icon-github">
-                                            <a class="github-link" href="#">
-                                                <img src="./images/github.svg" alt="github link">
-                                            </a>
-                                        </div>
-                                        <div class="icon-open-new">
-                                            <a class="open-new-link" href="#">
-                                                <img src="./images/open-new.svg" alt="Open in new Tab">
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <p>A short description of the project. Just a couple of sentances will do.</p>
-                            </div>
+                    <!-- Project 4 -->
+                    <article class="card">
+                        <div class="img-div" aria-label="Screenshot of project 1">
+                            <span class="h2-title">Screenshot of Project</span>
                         </div>
+                        <div class="project-details">
+                            <div class="project-info">
+                                <h3>Project Name</h3>
+                                <nav class="icons-div">
+                                    <div class="icon-github">
+                                        <a class="github-link" href="#" aria-label="View source code on github">
+                                            <img src="./images/github.svg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="icon-open-new">
+                                        <a class="open-new-link" href="#" target="_blank" aria-label="Open project in new Tab" 
+                                            rel="noopener noreferrer">
+                                            <img src="./images/open-new.svg" alt="">
+                                        </a>
+                                    </div>
+                                </nav>
+                            </div>
+                            <p>A short description of the project. Just a couple of sentances will do.</p>
+                        </div>
+                    </article>
 
-                        <!-- Project 5 -->
-                            <div class="card">
-                            <div class="img-div">
-                                <span class="h2-title">Screenshot of Project</span>
-                            </div>
-                            <div class="project-details">
-                                <div class="project-info">
-                                    <h3>Project Name</h3>
-                                    <div class="icons-div">
-                                        <div class="icon-github">
-                                            <a class="github-link" href="#">
-                                                <img src="./images/github.svg" alt="github link">
-                                            </a>
-                                        </div>
-                                        <div class="icon-open-new">
-                                            <a class="open-new-link" href="#">
-                                                <img src="./images/open-new.svg" alt="Open in new Tab">
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <p>A short description of the project. Just a couple of sentances will do.</p>
-                            </div>
+                    <!-- Project 5 -->
+                    <article class="card">
+                        <div class="img-div" aria-label="Screenshot of project 1">
+                            <span class="h2-title">Screenshot of Project</span>
                         </div>
+                        <div class="project-details">
+                            <div class="project-info">
+                                <h3>Project Name</h3>
+                                <nav class="icons-div">
+                                    <div class="icon-github">
+                                        <a class="github-link" href="#" aria-label="View source code on github">
+                                            <img src="./images/github.svg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="icon-open-new">
+                                        <a class="open-new-link" href="#" target="_blank" aria-label="Open project in new Tab" 
+                                            rel="noopener noreferrer">
+                                            <img src="./images/open-new.svg" alt="">
+                                        </a>
+                                    </div>
+                                </nav>
+                            </div>
+                            <p>A short description of the project. Just a couple of sentances will do.</p>
+                        </div>
+                    </article>
 
-                        <!-- Project 6 -->
-                            <div class="card">
-                            <div class="img-div">
-                                <span class="h2-title">Screenshot of Project</span>
-                            </div>
-                            <div class="project-details">
-                                <div class="project-info">
-                                    <h3>Project Name</h3>
-                                    <div class="icons-div">
-                                        <div class="icon-github">
-                                            <a class="github-link" href="#">
-                                                <img src="./images/github.svg" alt="github link">
-                                            </a>
-                                        </div>
-                                        <div class="icon-open-new">
-                                            <a class="open-new-link" href="#">
-                                                <img src="./images/open-new.svg" alt="Open in new Tab">
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <p>A short description of the project. Just a couple of sentances will do.</p>
-                            </div>
+                    <!-- Project 6 -->
+                    <article class="card">
+                        <div class="img-div" aria-label="Screenshot of project 1">
+                            <span class="h2-title">Screenshot of Project</span>
                         </div>
-                    </div>
+                        <div class="project-details">
+                            <div class="project-info">
+                                <h3>Project Name</h3>
+                                <nav class="icons-div">
+                                    <div class="icon-github">
+                                        <a class="github-link" href="#" aria-label="View source code on github">
+                                            <img src="./images/github.svg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="icon-open-new">
+                                        <a class="open-new-link" href="#" target="_blank" aria-label="Open project in new Tab" 
+                                            rel="noopener noreferrer">
+                                            <img src="./images/open-new.svg" alt="">
+                                        </a>
+                                    </div>
+                                </nav>
+                            </div>
+                            <p>A short description of the project. Just a couple of sentances will do.</p>
+                        </div>
+                    </article>
                 </div>
             </div>
-        </div>
+        </section>
+    </main>
 
-        <!-- Footer section -->
-        <div class="footer">
-            <div class="container">
-                <div class="left-pane">
-                    <h2>Contact me</h2>
-                    <p>Please get in touch if you think our work is mutually beneficial!</p>
-                    <p>1234 Random Road</p><br/>
-                    <span>Random Town, California 12345</span>
+    <!-- Footer section -->
+    <footer class="footer">
+        <div class="container">
+            <section class="left-pane">
+                <h2>Contact me</h2>
+                <p>Please get in touch if you think our work is mutually beneficial!</p>
 
-                    <div class="contact mt-2">
-                        <div class="phone">
-                            <img class="icon-md" src="./images/phone.svg" alt="phone">
-                            <span>555-555-55-55555</span>
-                        </div>
-                        <div class="email">
-                            <img class="icon-md" src="./images/mail.svg" alt="email">
-                            <span>random@example.com</span>
-                        </div>
+                <address>
+                    <p>1234 Random Road</p>
+                    <p>Random Town, California 12345</p>
+                    <p>
+                        <a href="tel:5555555555">
+                            <img class="icon-md" src="./images/phone.svg" alt="" aria-hidden="true">
+                            555-55-55555
+                        </a>
+                    </p>
+                    <p>
+                        <a href="mailto:random@example.com" title="random@example.com">
+                            <img class="icon-md" src="./images/mail.svg" alt="" aria-hidden="true">
+                            random@example.com
+                        </a>
+                    </p>
+                </address>
+                
+                
+
+                <!-- <div class="contact mt-2">
+                    <div class="phone">
+                        
+                        <span>555-555-55-55555</span>
                     </div>
-
-                    <div class="footer-icons mt-2">
-                        <a href="#" title="Github">
-                            <img class="icon-lg" src="./images/github.svg" alt="">
-                        </a>
-                        <a href="#" title="linkedin">
-                            <img class="icon-lg" src="./images/linkedin.svg" alt="">
-                        </a>
-                        <a href="#" title="X">
-                            <img class="icon-lg" src="./images/x.svg" alt="">
-                        </a>
+                    <div class="email">
+                        
+                        <span>random@example.com</span>
                     </div>
-                </div>
-                <div class="right-pane">
-                    <img class="profile-image footer-img" src="./images/profile-woman-large-1920.jpg" 
-                            alt=""
-                            srcset="./images/profile-woman-large-1920.jpg 1920w, ./images/profile-woman-medium-768.jpg 768w, ./images/profile-woman-small-425.jpg 425w"
-                            sizes="(min-width: 1920px) 1920px, (min-width: 768px) 768px, (min-width: 425px) 425px">
-                </div>
-            </div>
+                </div> -->
+
+                <nav class="footer-icons mt-2">
+                    <a href="#" title="Github" aria-label="Github profile">
+                        <img class="icon-lg" src="./images/github.svg" alt="">
+                    </a>
+                    <a href="#" title="linkedin" aria-label="linkedin profile">
+                        <img class="icon-lg" src="./images/linkedin.svg" alt="">
+                    </a>
+                    <a href="#" title="X" aria-label="X profile">
+                        <img class="icon-lg" src="./images/x.svg" alt="">
+                    </a>
+                </nav>
+            </section>
+            <aside class="right-pane">
+                <img class="profile-image footer-img" src="./images/profile-woman-large-1920.jpg" 
+                        alt=""
+                        srcset="./images/profile-woman-large-1920.jpg 1920w, ./images/profile-woman-medium-768.jpg 768w, ./images/profile-woman-small-425.jpg 425w"
+                        sizes="(min-width: 1920px) 1920px, (min-width: 768px) 768px, (min-width: 425px) 425px">
+            </aside>
         </div>
-    </div>
+    </footer>
+    <!-- </main> -->
 </body>
 </html>
